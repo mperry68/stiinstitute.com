@@ -1,0 +1,10 @@
+# Cloudflare Pages redirects
+# This file is used for Cloudflare Pages routing
+
+# Redirect root to index.html (if needed)
+/ /index.html 200
+
+# Language-specific redirects (optional)
+# /en/* /index.html 200
+# /fr/* /index.html 200
+

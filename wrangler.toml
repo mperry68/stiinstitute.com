@@ -1,0 +1,12 @@
+# Cloudflare Pages configuration
+# This file is optional but can be used for Cloudflare Workers/Pages settings
+
+name = "stiinstitute"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "stiinstitute"
+
+# Pages settings
+pages_build_output_dir = "."
+

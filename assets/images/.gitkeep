@@ -1,0 +1,16 @@
+# Image Assets Directory
+
+This directory should contain:
+- logo.png - Main STI logo
+- favicon.ico - Site favicon
+- about-institute.jpg - About page image
+- service-training.jpg - Professional training service image
+- service-certification.jpg - Certification programs image
+- service-workshops.jpg - Workshops image
+- service-consultation.jpg - Career consultation image
+- course-basic.jpg - Basic course image
+- course-advanced.jpg - Advanced course image
+- course-specialty.jpg - Specialty course image
+
+All images should be optimized for web use.
+

@@ -1,0 +1,24 @@
+{
+  "name": "stiinstitute-website",
+  "version": "1.0.0",
+  "description": "Skin Technologies Institute website - Bilingual (English/French)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "skin-care",
+    "education",
+    "training",
+    "beaconsfield",
+    "quebec"
+  ],
+  "author": "Skin Technologies Institute",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
+
