@@ -7,6 +7,181 @@
     <title>Services | Skin Technologies Institute</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <style>
+        .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 0 1rem;
+        }
+        .services-intro h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .services-intro p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+        .service-category {
+            margin-bottom: 5rem;
+        }
+        .service-category-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .service-category-header h2 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .service-category-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .service-card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .service-card-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .service-benefits {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        .service-benefits li {
+            color: var(--text-color);
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        .service-benefits li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .service-cta {
+            margin-top: auto;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .service-cta .btn {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+        }
+        .service-cta .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+        .service-cta .btn-secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        .service-featured {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .service-featured-image {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            object-fit: cover;
+        }
+        .service-featured-content {
+            padding: 3rem;
+        }
+        .service-featured h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .service-featured p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .service-featured .service-benefits {
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 768px) {
+            .service-featured {
+                grid-template-columns: 1fr;
+            }
+            .service-featured-image {
+                min-height: 300px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-category-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -44,81 +219,283 @@
         <section class="page-header">
             <div class="container">
                 <h1 data-i18n="services.title">Our Services</h1>
+                <p class="page-subtitle" data-i18n="services.subtitle">Comprehensive skin care and wellness solutions tailored to your unique needs</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <div id="injectables" class="service-section" style="margin-bottom: 4rem;">
-                    <div class="content-grid">
-                        <div class="content-image">
-                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Injectables" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                <div class="services-intro">
+                    <h2 data-i18n="services.intro.title">Transform Your Skin, Enhance Your Confidence</h2>
+                    <p data-i18n="services.intro.desc">At Skin Technologies Institute, we offer a comprehensive range of advanced aesthetic treatments designed to help you look and feel your best. Our expert team combines medical expertise with cutting-edge technology to deliver personalized solutions for your unique skin concerns and wellness goals.</p>
+                </div>
+
+                <!-- Injectables Section -->
+                <div id="injectables" class="service-category">
+                    <div class="service-category-header">
+                        <h2 data-i18n="services.injectables.title">Injectable Treatments</h2>
+                        <p data-i18n="services.injectables.subtitle">Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results.</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Botox & Dysport" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.injectables.botox.title">Botox & Dysport</h3>
+                                <p data-i18n="services.injectables.botox.desc">Smooth away fine lines and wrinkles with FDA-approved neurotoxin treatments. Perfect for crow's feet, forehead lines, and frown lines.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.injectables.botox.benefit1">Reduces dynamic wrinkles</li>
+                                    <li data-i18n="services.injectables.botox.benefit2">Prevents new lines from forming</li>
+                                    <li data-i18n="services.injectables.botox.benefit3">Quick treatment, minimal downtime</li>
+                                    <li data-i18n="services.injectables.botox.benefit4">Results last 3-4 months</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#injectables" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content-text">
-                            <h2 data-i18n="services.injectables.title">Injectables</h2>
-                            <p data-i18n="services.injectables.desc">Professional injectable treatments to enhance your natural beauty and address specific concerns.</p>
-                            <ul class="values-list">
-                                <li data-i18n="services.injectables.item1">Botox & Dermal Fillers</li>
-                                <li data-i18n="services.injectables.item2">Lip Enhancements</li>
-                                <li data-i18n="services.injectables.item3">Wrinkle Reduction</li>
-                                <li data-i18n="services.injectables.item4">Facial Contouring</li>
-                            </ul>
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Dermal Fillers" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.injectables.fillers.title">Dermal Fillers</h3>
+                                <p data-i18n="services.injectables.fillers.desc">Restore volume, smooth lines, and enhance facial contours with premium hyaluronic acid fillers. Ideal for lips, cheeks, and under-eye areas.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.injectables.fillers.benefit1">Restores lost volume</li>
+                                    <li data-i18n="services.injectables.fillers.benefit2">Smooths deep wrinkles</li>
+                                    <li data-i18n="services.injectables.fillers.benefit3">Enhances facial contours</li>
+                                    <li data-i18n="services.injectables.fillers.benefit4">Natural-looking results</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#injectables" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Lip Enhancements" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.injectables.lips.title">Lip Enhancements</h3>
+                                <p data-i18n="services.injectables.lips.desc">Achieve fuller, more defined lips with expertly placed dermal fillers. We create natural-looking volume that enhances your unique features.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.injectables.lips.benefit1">Adds volume and definition</li>
+                                    <li data-i18n="services.injectables.lips.benefit2">Smooths lip lines</li>
+                                    <li data-i18n="services.injectables.lips.benefit3">Natural-looking results</li>
+                                    <li data-i18n="services.injectables.lips.benefit4">Customized to your goals</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#injectables" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="face" class="service-section" style="margin-bottom: 4rem;">
-                    <div class="content-grid" style="grid-template-columns: 1fr 1fr;">
-                        <div class="content-text">
-                            <h2 data-i18n="services.face.title">Face Treatments</h2>
-                            <p data-i18n="services.face.desc">Comprehensive facial treatments designed to rejuvenate, hydrate, and restore your skin's natural glow.</p>
-                            <ul class="values-list">
-                                <li data-i18n="services.face.item1">Hydrafacial</li>
-                                <li data-i18n="services.face.item2">Chemical Peels</li>
-                                <li data-i18n="services.face.item3">Microdermabrasion</li>
-                                <li data-i18n="services.face.item4">Custom Facials</li>
+                <!-- Face Treatments Section -->
+                <div id="face" class="service-category">
+                    <div class="service-category-header">
+                        <h2 data-i18n="services.face.title">Face Treatments</h2>
+                        <p data-i18n="services.face.subtitle">Rejuvenate and restore your skin's natural radiance with our advanced facial treatments.</p>
+                    </div>
+                    <div class="service-featured">
+                        <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Hydrafacial" class="service-featured-image">
+                        <div class="service-featured-content">
+                            <h2 data-i18n="services.face.hydrafacial.title">Hydrafacial</h2>
+                            <p data-i18n="services.face.hydrafacial.desc">Our signature treatment combines deep cleansing, exfoliation, extraction, hydration, and antioxidant protection in one relaxing session. Suitable for all skin types with immediate, visible results.</p>
+                            <ul class="service-benefits">
+                                <li data-i18n="services.face.hydrafacial.benefit1">Deeply cleanses and unclogs pores</li>
+                                <li data-i18n="services.face.hydrafacial.benefit2">Removes dead skin cells</li>
+                                <li data-i18n="services.face.hydrafacial.benefit3">Hydrates and nourishes skin</li>
+                                <li data-i18n="services.face.hydrafacial.benefit4">No downtime, instant glow</li>
                             </ul>
+                            <div class="service-cta">
+                                <a href="/pricing.html#face" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                            </div>
                         </div>
-                        <div class="content-image">
-                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Face Treatments" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Chemical Peels" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.face.chemical.title">Chemical Peels</h3>
+                                <p data-i18n="services.face.chemical.desc">Resurface and renew your skin with customized chemical peels. Effective for treating acne, hyperpigmentation, fine lines, and uneven texture.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.face.chemical.benefit1">Improves skin texture and tone</li>
+                                    <li data-i18n="services.face.chemical.benefit2">Reduces fine lines and wrinkles</li>
+                                    <li data-i18n="services.face.chemical.benefit3">Fades dark spots and pigmentation</li>
+                                    <li data-i18n="services.face.chemical.benefit4">Customized depth and strength</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#face" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Microneedling" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.face.microneedling.title">Microneedling</h3>
+                                <p data-i18n="services.face.microneedling.desc">Stimulate your skin's natural collagen production with microneedling. Ideal for reducing scars, fine lines, and improving overall skin texture.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.face.microneedling.benefit1">Boosts collagen production</li>
+                                    <li data-i18n="services.face.microneedling.benefit2">Reduces scars and stretch marks</li>
+                                    <li data-i18n="services.face.microneedling.benefit3">Improves skin texture</li>
+                                    <li data-i18n="services.face.microneedling.benefit4">Minimizes pore appearance</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#face" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Laser & IPL" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.face.laser.title">Laser & IPL Treatments</h3>
+                                <p data-i18n="services.face.laser.desc">Advanced laser and IPL technology to address pigmentation, redness, fine lines, and overall skin rejuvenation with precision and effectiveness.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.face.laser.benefit1">Reduces sun damage and age spots</li>
+                                    <li data-i18n="services.face.laser.benefit2">Treats rosacea and redness</li>
+                                    <li data-i18n="services.face.laser.benefit3">Smooths fine lines and wrinkles</li>
+                                    <li data-i18n="services.face.laser.benefit4">Improves overall skin quality</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#face" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="body" class="service-section" style="margin-bottom: 4rem;">
-                    <div class="content-grid">
-                        <div class="content-image">
-                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Body Treatments" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                <!-- Body Treatments Section -->
+                <div id="body" class="service-category">
+                    <div class="service-category-header">
+                        <h2 data-i18n="services.body.title">Body Treatments</h2>
+                        <p data-i18n="services.body.subtitle">Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments.</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Body Contouring" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.body.contouring.title">Body Contouring</h3>
+                                <p data-i18n="services.body.contouring.desc">Reduce stubborn fat and reshape your body with BodyFx technology. Non-invasive treatment that targets fat cells while tightening skin.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.body.contouring.benefit1">Reduces fat in targeted areas</li>
+                                    <li data-i18n="services.body.contouring.benefit2">Tightens and firms skin</li>
+                                    <li data-i18n="services.body.contouring.benefit3">No surgery, no downtime</li>
+                                    <li data-i18n="services.body.contouring.benefit4">Visible results in weeks</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#body" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content-text">
-                            <h2 data-i18n="services.body.title">Body Treatments</h2>
-                            <p data-i18n="services.body.desc">Advanced body contouring and treatment options to help you achieve your wellness goals.</p>
-                            <ul class="values-list">
-                                <li data-i18n="services.body.item1">Body Contouring</li>
-                                <li data-i18n="services.body.item2">Cellulite Reduction</li>
-                                <li data-i18n="services.body.item3">Skin Tightening</li>
-                                <li data-i18n="services.body.item4">Body Wraps</li>
-                            </ul>
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Cellulite Reduction" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.body.cellulite.title">Cellulite Reduction</h3>
+                                <p data-i18n="services.body.cellulite.desc">Smooth away cellulite with VelaShape III technology. This advanced treatment combines radiofrequency, infrared light, and vacuum massage for visible results.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.body.cellulite.benefit1">Reduces appearance of cellulite</li>
+                                    <li data-i18n="services.body.cellulite.benefit2">Improves skin texture</li>
+                                    <li data-i18n="services.body.cellulite.benefit3">Non-invasive and comfortable</li>
+                                    <li data-i18n="services.body.cellulite.benefit4">Long-lasting results</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#body" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Skin Tightening" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.body.tightening.title">Skin Tightening</h3>
+                                <p data-i18n="services.body.tightening.desc">Firm and tighten loose skin with Potenza RF Microneedling. This treatment stimulates collagen production for tighter, more youthful-looking skin.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.body.tightening.benefit1">Tightens loose or sagging skin</li>
+                                    <li data-i18n="services.body.tightening.benefit2">Stimulates collagen production</li>
+                                    <li data-i18n="services.body.tightening.benefit3">Improves skin elasticity</li>
+                                    <li data-i18n="services.body.tightening.benefit4">Suitable for body and face</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#body" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="wellness" class="service-section">
-                    <div class="content-grid" style="grid-template-columns: 1fr 1fr;">
-                        <div class="content-text">
-                            <h2 data-i18n="services.wellness.title">Wellness</h2>
-                            <p data-i18n="services.wellness.desc">Holistic wellness treatments to support your overall health and vitality.</p>
-                            <ul class="values-list">
-                                <li data-i18n="services.wellness.item1">IV Therapy</li>
-                                <li data-i18n="services.wellness.item2">Vitamin Injections</li>
-                                <li data-i18n="services.wellness.item3">Wellness Consultations</li>
-                                <li data-i18n="services.wellness.item4">Nutritional Support</li>
-                            </ul>
+                <!-- Wellness Section -->
+                <div id="wellness" class="service-category">
+                    <div class="service-category-header">
+                        <h2 data-i18n="services.wellness.title">Wellness Services</h2>
+                        <p data-i18n="services.wellness.subtitle">Support your overall health and vitality with our comprehensive wellness treatments.</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-48886381.jpeg" alt="IV Therapy" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.wellness.iv.title">IV Therapy</h3>
+                                <p data-i18n="services.wellness.iv.desc">Replenish your body with essential vitamins, minerals, and nutrients through intravenous therapy. Customized blends for energy, immunity, hydration, and more.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.wellness.iv.benefit1">100% absorption of nutrients</li>
+                                    <li data-i18n="services.wellness.iv.benefit2">Boosts energy and immunity</li>
+                                    <li data-i18n="services.wellness.iv.benefit3">Improves hydration</li>
+                                    <li data-i18n="services.wellness.iv.benefit4">Customized to your needs</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#wellness" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content-image">
-                            <img src="/assets/images/OIP-48886381.jpeg" alt="Wellness" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-48886381.jpeg" alt="Vitamin Injections" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.wellness.vitamin.title">Vitamin Injections</h3>
+                                <p data-i18n="services.wellness.vitamin.desc">Quick and effective vitamin B12 injections to boost your energy, metabolism, and overall wellness. Perfect for busy lifestyles.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.wellness.vitamin.benefit1">Boosts energy levels</li>
+                                    <li data-i18n="services.wellness.vitamin.benefit2">Supports metabolism</li>
+                                    <li data-i18n="services.wellness.vitamin.benefit3">Quick 5-minute treatment</li>
+                                    <li data-i18n="services.wellness.vitamin.benefit4">No downtime required</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#wellness" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="/assets/images/OIP-48886381.jpeg" alt="Wellness Consultation" class="service-card-image">
+                            <div class="service-card-content">
+                                <h3 data-i18n="services.wellness.consult.title">Wellness Consultation</h3>
+                                <p data-i18n="services.wellness.consult.desc">Comprehensive wellness assessment to create a personalized plan for your health and vitality goals. Our experts will guide you toward optimal wellness.</p>
+                                <ul class="service-benefits">
+                                    <li data-i18n="services.wellness.consult.benefit1">Personalized wellness plan</li>
+                                    <li data-i18n="services.wellness.consult.benefit2">Expert guidance and support</li>
+                                    <li data-i18n="services.wellness.consult.benefit3">Comprehensive health assessment</li>
+                                    <li data-i18n="services.wellness.consult.benefit4">Ongoing support and follow-up</li>
+                                </ul>
+                                <div class="service-cta">
+                                    <a href="/pricing.html#wellness" class="btn" data-i18n="services.viewpricing">View Pricing</a>
+                                    <a href="/contact.html" class="btn btn-secondary" data-i18n="services.consultation">Book Consultation</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--bg-light); border-radius: 8px;">
+                    <h2 style="font-size: 2rem; font-weight: 300; color: var(--primary-color); margin-bottom: 1rem;" data-i18n="services.cta.title">Ready to Begin Your Journey?</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="services.cta.desc">Schedule a consultation with our expert team to discuss your goals and create a personalized treatment plan.</p>
+                    <a href="/contact.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2.5rem;" data-i18n="services.cta.button">Book Your Consultation</a>
                 </div>
             </div>
         </section>

@@ -77,37 +77,137 @@ const translations = {
         },
         services: {
             title: "Our Services",
+            subtitle: "Comprehensive skin care and wellness solutions tailored to your unique needs",
+            intro: {
+                title: "Transform Your Skin, Enhance Your Confidence",
+                desc: "At Skin Technologies Institute, we offer a comprehensive range of advanced aesthetic treatments designed to help you look and feel your best. Our expert team combines medical expertise with cutting-edge technology to deliver personalized solutions for your unique skin concerns and wellness goals."
+            },
+            viewpricing: "View Pricing",
+            consultation: "Book Consultation",
             injectables: {
-                title: "Injectables",
-                desc: "Professional injectable treatments to enhance your natural beauty and address specific concerns.",
-                item1: "Botox & Dermal Fillers",
-                item2: "Lip Enhancements",
-                item3: "Wrinkle Reduction",
-                item4: "Facial Contouring"
+                title: "Injectable Treatments",
+                subtitle: "Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results.",
+                botox: {
+                    title: "Botox & Dysport",
+                    desc: "Smooth away fine lines and wrinkles with FDA-approved neurotoxin treatments. Perfect for crow's feet, forehead lines, and frown lines.",
+                    benefit1: "Reduces dynamic wrinkles",
+                    benefit2: "Prevents new lines from forming",
+                    benefit3: "Quick treatment, minimal downtime",
+                    benefit4: "Results last 3-4 months"
+                },
+                fillers: {
+                    title: "Dermal Fillers",
+                    desc: "Restore volume, smooth lines, and enhance facial contours with premium hyaluronic acid fillers. Ideal for lips, cheeks, and under-eye areas.",
+                    benefit1: "Restores lost volume",
+                    benefit2: "Smooths deep wrinkles",
+                    benefit3: "Enhances facial contours",
+                    benefit4: "Natural-looking results"
+                },
+                lips: {
+                    title: "Lip Enhancements",
+                    desc: "Achieve fuller, more defined lips with expertly placed dermal fillers. We create natural-looking volume that enhances your unique features.",
+                    benefit1: "Adds volume and definition",
+                    benefit2: "Smooths lip lines",
+                    benefit3: "Natural-looking results",
+                    benefit4: "Customized to your goals"
+                }
             },
             face: {
                 title: "Face Treatments",
-                desc: "Comprehensive facial treatments designed to rejuvenate, hydrate, and restore your skin's natural glow.",
-                item1: "Hydrafacial",
-                item2: "Chemical Peels",
-                item3: "Microdermabrasion",
-                item4: "Custom Facials"
+                subtitle: "Rejuvenate and restore your skin's natural radiance with our advanced facial treatments.",
+                hydrafacial: {
+                    title: "Hydrafacial",
+                    desc: "Our signature treatment combines deep cleansing, exfoliation, extraction, hydration, and antioxidant protection in one relaxing session. Suitable for all skin types with immediate, visible results.",
+                    benefit1: "Deeply cleanses and unclogs pores",
+                    benefit2: "Removes dead skin cells",
+                    benefit3: "Hydrates and nourishes skin",
+                    benefit4: "No downtime, instant glow"
+                },
+                chemical: {
+                    title: "Chemical Peels",
+                    desc: "Resurface and renew your skin with customized chemical peels. Effective for treating acne, hyperpigmentation, fine lines, and uneven texture.",
+                    benefit1: "Improves skin texture and tone",
+                    benefit2: "Reduces fine lines and wrinkles",
+                    benefit3: "Fades dark spots and pigmentation",
+                    benefit4: "Customized depth and strength"
+                },
+                microneedling: {
+                    title: "Microneedling",
+                    desc: "Stimulate your skin's natural collagen production with microneedling. Ideal for reducing scars, fine lines, and improving overall skin texture.",
+                    benefit1: "Boosts collagen production",
+                    benefit2: "Reduces scars and stretch marks",
+                    benefit3: "Improves skin texture",
+                    benefit4: "Minimizes pore appearance"
+                },
+                laser: {
+                    title: "Laser & IPL Treatments",
+                    desc: "Advanced laser and IPL technology to address pigmentation, redness, fine lines, and overall skin rejuvenation with precision and effectiveness.",
+                    benefit1: "Reduces sun damage and age spots",
+                    benefit2: "Treats rosacea and redness",
+                    benefit3: "Smooths fine lines and wrinkles",
+                    benefit4: "Improves overall skin quality"
+                }
             },
             body: {
                 title: "Body Treatments",
-                desc: "Advanced body contouring and treatment options to help you achieve your wellness goals.",
-                item1: "Body Contouring",
-                item2: "Cellulite Reduction",
-                item3: "Skin Tightening",
-                item4: "Body Wraps"
+                subtitle: "Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments.",
+                contouring: {
+                    title: "Body Contouring",
+                    desc: "Reduce stubborn fat and reshape your body with BodyFx technology. Non-invasive treatment that targets fat cells while tightening skin.",
+                    benefit1: "Reduces fat in targeted areas",
+                    benefit2: "Tightens and firms skin",
+                    benefit3: "No surgery, no downtime",
+                    benefit4: "Visible results in weeks"
+                },
+                cellulite: {
+                    title: "Cellulite Reduction",
+                    desc: "Smooth away cellulite with VelaShape III technology. This advanced treatment combines radiofrequency, infrared light, and vacuum massage for visible results.",
+                    benefit1: "Reduces appearance of cellulite",
+                    benefit2: "Improves skin texture",
+                    benefit3: "Non-invasive and comfortable",
+                    benefit4: "Long-lasting results"
+                },
+                tightening: {
+                    title: "Skin Tightening",
+                    desc: "Firm and tighten loose skin with Potenza RF Microneedling. This treatment stimulates collagen production for tighter, more youthful-looking skin.",
+                    benefit1: "Tightens loose or sagging skin",
+                    benefit2: "Stimulates collagen production",
+                    benefit3: "Improves skin elasticity",
+                    benefit4: "Suitable for body and face"
+                }
             },
             wellness: {
-                title: "Wellness",
-                desc: "Holistic wellness treatments to support your overall health and vitality.",
-                item1: "IV Therapy",
-                item2: "Vitamin Injections",
-                item3: "Wellness Consultations",
-                item4: "Nutritional Support"
+                title: "Wellness Services",
+                subtitle: "Support your overall health and vitality with our comprehensive wellness treatments.",
+                iv: {
+                    title: "IV Therapy",
+                    desc: "Replenish your body with essential vitamins, minerals, and nutrients through intravenous therapy. Customized blends for energy, immunity, hydration, and more.",
+                    benefit1: "100% absorption of nutrients",
+                    benefit2: "Boosts energy and immunity",
+                    benefit3: "Improves hydration",
+                    benefit4: "Customized to your needs"
+                },
+                vitamin: {
+                    title: "Vitamin Injections",
+                    desc: "Quick and effective vitamin B12 injections to boost your energy, metabolism, and overall wellness. Perfect for busy lifestyles.",
+                    benefit1: "Boosts energy levels",
+                    benefit2: "Supports metabolism",
+                    benefit3: "Quick 5-minute treatment",
+                    benefit4: "No downtime required"
+                },
+                consult: {
+                    title: "Wellness Consultation",
+                    desc: "Comprehensive wellness assessment to create a personalized plan for your health and vitality goals. Our experts will guide you toward optimal wellness.",
+                    benefit1: "Personalized wellness plan",
+                    benefit2: "Expert guidance and support",
+                    benefit3: "Comprehensive health assessment",
+                    benefit4: "Ongoing support and follow-up"
+                }
+            },
+            cta: {
+                title: "Ready to Begin Your Journey?",
+                desc: "Schedule a consultation with our expert team to discuss your goals and create a personalized treatment plan.",
+                button: "Book Your Consultation"
             }
         },
         pricing: {
@@ -375,37 +475,137 @@ const translations = {
         },
         services: {
             title: "Nos services",
+            subtitle: "Solutions complètes de soins de la peau et de bien-être adaptées à vos besoins uniques",
+            intro: {
+                title: "Transformez votre peau, renforcez votre confiance",
+                desc: "À l'Institut des Technologies de la Peau, nous offrons une gamme complète de traitements esthétiques avancés conçus pour vous aider à paraître et à vous sentir au mieux. Notre équipe d'experts combine l'expertise médicale avec une technologie de pointe pour offrir des solutions personnalisées à vos préoccupations cutanées uniques et à vos objectifs de bien-être."
+            },
+            viewpricing: "Voir les tarifs",
+            consultation: "Réserver une consultation",
             injectables: {
-                title: "Injectables",
-                desc: "Traitements injectables professionnels pour améliorer votre beauté naturelle et répondre à des préoccupations spécifiques.",
-                item1: "Botox et charges dermiques",
-                item2: "Amélioration des lèvres",
-                item3: "Réduction des rides",
-                item4: "Contour du visage"
+                title: "Traitements injectables",
+                subtitle: "Améliorez votre beauté naturelle avec des traitements injectables de précision qui offrent des résultats subtils et naturels.",
+                botox: {
+                    title: "Botox et Dysport",
+                    desc: "Lissez les rides et les ridules avec des traitements neurotoxiques approuvés par la FDA. Parfait pour les pattes d'oie, les rides du front et les rides du lion.",
+                    benefit1: "Réduit les rides dynamiques",
+                    benefit2: "Empêche la formation de nouvelles rides",
+                    benefit3: "Traitement rapide, temps d'arrêt minimal",
+                    benefit4: "Résultats durent 3-4 mois"
+                },
+                fillers: {
+                    title: "Charges dermiques",
+                    desc: "Restaurez le volume, lissez les rides et améliorez les contours du visage avec des charges d'acide hyaluronique de qualité supérieure. Idéal pour les lèvres, les joues et les zones sous les yeux.",
+                    benefit1: "Restaure le volume perdu",
+                    benefit2: "Lisse les rides profondes",
+                    benefit3: "Améliore les contours du visage",
+                    benefit4: "Résultats naturels"
+                },
+                lips: {
+                    title: "Amélioration des lèvres",
+                    desc: "Obtenez des lèvres plus pleines et plus définies avec des charges dermiques placées avec expertise. Nous créons un volume naturel qui met en valeur vos caractéristiques uniques.",
+                    benefit1: "Ajoute du volume et de la définition",
+                    benefit2: "Lisse les lignes des lèvres",
+                    benefit3: "Résultats naturels",
+                    benefit4: "Personnalisé selon vos objectifs"
+                }
             },
             face: {
                 title: "Traitements du visage",
-                desc: "Traitements faciaux complets conçus pour rajeunir, hydrater et restaurer l'éclat naturel de votre peau.",
-                item1: "Hydrafacial",
-                item2: "Peelings chimiques",
-                item3: "Microdermabrasion",
-                item4: "Soins du visage personnalisés"
+                subtitle: "Rajeunissez et restaurez l'éclat naturel de votre peau avec nos traitements faciaux avancés.",
+                hydrafacial: {
+                    title: "Hydrafacial",
+                    desc: "Notre traitement signature combine nettoyage en profondeur, exfoliation, extraction, hydratation et protection antioxydante en une seule séance relaxante. Convient à tous les types de peau avec des résultats visibles immédiats.",
+                    benefit1: "Nettoie en profondeur et débouche les pores",
+                    benefit2: "Élimine les cellules mortes de la peau",
+                    benefit3: "Hydrate et nourrit la peau",
+                    benefit4: "Pas de temps d'arrêt, éclat instantané"
+                },
+                chemical: {
+                    title: "Peelings chimiques",
+                    desc: "Resurfaçez et renouvelez votre peau avec des peelings chimiques personnalisés. Efficace pour traiter l'acné, l'hyperpigmentation, les fines rides et la texture irrégulière.",
+                    benefit1: "Améliore la texture et le teint de la peau",
+                    benefit2: "Réduit les fines rides et les rides",
+                    benefit3: "Estompe les taches sombres et la pigmentation",
+                    benefit4: "Profondeur et force personnalisées"
+                },
+                microneedling: {
+                    title: "Microneedling",
+                    desc: "Stimulez la production naturelle de collagène de votre peau avec le microneedling. Idéal pour réduire les cicatrices, les fines rides et améliorer la texture globale de la peau.",
+                    benefit1: "Stimule la production de collagène",
+                    benefit2: "Réduit les cicatrices et les vergetures",
+                    benefit3: "Améliore la texture de la peau",
+                    benefit4: "Minimise l'apparence des pores"
+                },
+                laser: {
+                    title: "Traitements laser et IPL",
+                    desc: "Technologie laser et IPL avancée pour traiter la pigmentation, les rougeurs, les fines rides et le rajeunissement global de la peau avec précision et efficacité.",
+                    benefit1: "Réduit les dommages solaires et les taches de vieillesse",
+                    benefit2: "Traite la rosacée et les rougeurs",
+                    benefit3: "Lisse les fines rides et les rides",
+                    benefit4: "Améliore la qualité globale de la peau"
+                }
             },
             body: {
                 title: "Traitements corporels",
-                desc: "Options avancées de modelage corporel et de traitement pour vous aider à atteindre vos objectifs de bien-être.",
-                item1: "Modelage corporel",
-                item2: "Réduction de la cellulite",
-                item3: "Raffermissement de la peau",
-                item4: "Enveloppements corporels"
+                subtitle: "Atteignez vos objectifs de modelage corporel et de raffermissement de la peau avec nos traitements non invasifs avancés.",
+                contouring: {
+                    title: "Modelage corporel",
+                    desc: "Réduisez la graisse tenace et redessinez votre corps avec la technologie BodyFx. Traitement non invasif qui cible les cellules graisseuses tout en raffermissant la peau.",
+                    benefit1: "Réduit la graisse dans les zones ciblées",
+                    benefit2: "Raffermit et tonifie la peau",
+                    benefit3: "Pas de chirurgie, pas de temps d'arrêt",
+                    benefit4: "Résultats visibles en quelques semaines"
+                },
+                cellulite: {
+                    title: "Réduction de la cellulite",
+                    desc: "Lissez la cellulite avec la technologie VelaShape III. Ce traitement avancé combine la radiofréquence, la lumière infrarouge et le massage sous vide pour des résultats visibles.",
+                    benefit1: "Réduit l'apparence de la cellulite",
+                    benefit2: "Améliore la texture de la peau",
+                    benefit3: "Non invasif et confortable",
+                    benefit4: "Résultats durables"
+                },
+                tightening: {
+                    title: "Raffermissement de la peau",
+                    desc: "Raffermissez et tonifiez la peau relâchée avec le microneedling RF Potenza. Ce traitement stimule la production de collagène pour une peau plus ferme et plus jeune.",
+                    benefit1: "Raffermit la peau relâchée ou affaissée",
+                    benefit2: "Stimule la production de collagène",
+                    benefit3: "Améliore l'élasticité de la peau",
+                    benefit4: "Convient au corps et au visage"
+                }
             },
             wellness: {
-                title: "Bien-être",
-                desc: "Traitements de bien-être holistiques pour soutenir votre santé globale et votre vitalité.",
-                item1: "Thérapie IV",
-                item2: "Injections de vitamines",
-                item3: "Consultations de bien-être",
-                item4: "Soutien nutritionnel"
+                title: "Services de bien-être",
+                subtitle: "Soutenez votre santé globale et votre vitalité avec nos traitements de bien-être complets.",
+                iv: {
+                    title: "Thérapie IV",
+                    desc: "Rechargez votre corps avec des vitamines, minéraux et nutriments essentiels grâce à la thérapie intraveineuse. Mélanges personnalisés pour l'énergie, l'immunité, l'hydratation et plus encore.",
+                    benefit1: "100% d'absorption des nutriments",
+                    benefit2: "Augmente l'énergie et l'immunité",
+                    benefit3: "Améliore l'hydratation",
+                    benefit4: "Personnalisé selon vos besoins"
+                },
+                vitamin: {
+                    title: "Injections de vitamines",
+                    desc: "Injections rapides et efficaces de vitamine B12 pour augmenter votre énergie, votre métabolisme et votre bien-être global. Parfait pour les modes de vie occupés.",
+                    benefit1: "Augmente les niveaux d'énergie",
+                    benefit2: "Soutient le métabolisme",
+                    benefit3: "Traitement rapide de 5 minutes",
+                    benefit4: "Pas de temps d'arrêt requis"
+                },
+                consult: {
+                    title: "Consultation de bien-être",
+                    desc: "Évaluation complète du bien-être pour créer un plan personnalisé pour vos objectifs de santé et de vitalité. Nos experts vous guideront vers un bien-être optimal.",
+                    benefit1: "Plan de bien-être personnalisé",
+                    benefit2: "Conseils et soutien d'experts",
+                    benefit3: "Évaluation complète de la santé",
+                    benefit4: "Soutien et suivi continus"
+                }
+            },
+            cta: {
+                title: "Prêt à commencer votre parcours?",
+                desc: "Planifiez une consultation avec notre équipe d'experts pour discuter de vos objectifs et créer un plan de traitement personnalisé.",
+                button: "Réserver votre consultation"
             }
         },
         pricing: {
