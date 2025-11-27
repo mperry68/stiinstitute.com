@@ -32,15 +32,6 @@
             text-align: center;
             margin-bottom: 3rem;
         }
-        .service-category-image {
-            width: 100%;
-            max-width: 800px;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
         .service-category-header h2 {
             font-size: 2.2rem;
             font-weight: 300;
@@ -119,10 +110,12 @@
         }
         .service-cta .btn {
             flex: 1;
-            min-width: 120px;
+            min-width: 150px;
             text-align: center;
-            padding: 0.75rem 1.5rem;
-            font-size: 0.9rem;
+            padding: 0.75rem 0.75rem;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            line-height: 1.2;
         }
         .service-cta .btn-secondary {
             background: transparent;
@@ -183,8 +176,12 @@
             .service-category-header h2 {
                 font-size: 1.8rem;
             }
-            .service-category-image {
-                height: 250px;
+            .service-cta {
+                flex-direction: column;
+            }
+            .service-cta .btn {
+                width: 100%;
+                min-width: unset;
             }
         }
     </style>
@@ -239,7 +236,6 @@
                 <!-- Injectables Section -->
                 <div id="injectables" class="service-category">
                     <div class="service-category-header">
-                        <img src="/assets/images/OIP-3102335673.jpeg" alt="Injectable Treatments" class="service-category-image">
                         <h2 data-i18n="services.injectables.title">Injectable Treatments</h2>
                         <p data-i18n="services.injectables.subtitle">Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results.</p>
                     </div>
@@ -298,7 +294,6 @@
                 <!-- Face Treatments Section -->
                 <div id="face" class="service-category">
                     <div class="service-category-header">
-                        <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Face Treatments" class="service-category-image">
                         <h2 data-i18n="services.face.title">Face Treatments</h2>
                         <p data-i18n="services.face.subtitle">Rejuvenate and restore your skin's natural radiance with our advanced facial treatments.</p>
                     </div>
@@ -374,7 +369,6 @@
                 <!-- Body Treatments Section -->
                 <div id="body" class="service-category">
                     <div class="service-category-header">
-                        <img src="/assets/images/OIP-3870660155.jpeg" alt="Body Treatments" class="service-category-image">
                         <h2 data-i18n="services.body.title">Body Treatments</h2>
                         <p data-i18n="services.body.subtitle">Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments.</p>
                     </div>
@@ -433,7 +427,6 @@
                 <!-- Wellness Section -->
                 <div id="wellness" class="service-category">
                     <div class="service-category-header">
-                        <img src="/assets/images/OIP-48886381.jpeg" alt="Wellness Services" class="service-category-image">
                         <h2 data-i18n="services.wellness.title">Wellness Services</h2>
                         <p data-i18n="services.wellness.subtitle">Support your overall health and vitality with our comprehensive wellness treatments.</p>
                     </div>
