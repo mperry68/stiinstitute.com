@@ -21,21 +21,25 @@ const translations = {
             invitation: "We invite you to discover what makes Skin Technologies Institute special. Book your consultation today and take the first step toward the glowing, healthy skin you deserve."
         },
         features: {
+            title: "Our Services",
+            subtitle: "Discover our comprehensive range of advanced aesthetic treatments designed to help you look and feel your best.",
+            learnmore: "Learn More",
+            seepricing: "See Pricing",
             injectables: {
                 title: "Injectables",
-                link: "Discover our injectable treatments."
+                desc: "Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results."
             },
             face: {
-                title: "Face",
-                link: "Discover our face treatments."
+                title: "Face Treatments",
+                desc: "Rejuvenate and restore your skin's natural radiance with our advanced facial treatments."
             },
             body: {
-                title: "Body",
-                link: "Discover our body treatments."
+                title: "Body Treatments",
+                desc: "Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments."
             },
             wellness: {
                 title: "Wellness",
-                link: "Discover our wellness treatments."
+                desc: "Support your overall health and vitality with our comprehensive wellness treatments."
             }
         },
         about: {
@@ -87,6 +91,14 @@ const translations = {
             injectables: {
                 title: "Injectable Treatments",
                 subtitle: "Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results.",
+                featured: {
+                    title: "Injectable Treatments",
+                    desc: "Enhance your natural beauty with precision injectable treatments including Botox, Dysport, and dermal fillers. Our expert team delivers subtle, natural-looking results tailored to your unique features.",
+                    benefit1: "FDA-approved treatments",
+                    benefit2: "Natural-looking results",
+                    benefit3: "Expert injectors",
+                    benefit4: "Customized to your goals"
+                },
                 botox: {
                     title: "Botox & Dysport",
                     desc: "Smooth away fine lines and wrinkles with FDA-approved neurotoxin treatments. Perfect for crow's feet, forehead lines, and frown lines.",
@@ -151,6 +163,14 @@ const translations = {
             body: {
                 title: "Body Treatments",
                 subtitle: "Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments.",
+                featured: {
+                    title: "Body Treatments",
+                    desc: "Transform your body with our advanced non-invasive treatments. From body contouring to cellulite reduction and skin tightening, we help you achieve your wellness goals.",
+                    benefit1: "Non-invasive technology",
+                    benefit2: "Visible results",
+                    benefit3: "No downtime",
+                    benefit4: "Personalized treatment plans"
+                },
                 contouring: {
                     title: "Body Contouring",
                     desc: "Reduce stubborn fat and reshape your body with BodyFx technology. Non-invasive treatment that targets fat cells while tightening skin.",
@@ -179,6 +199,14 @@ const translations = {
             wellness: {
                 title: "Wellness Services",
                 subtitle: "Support your overall health and vitality with our comprehensive wellness treatments.",
+                featured: {
+                    title: "Wellness Services",
+                    desc: "Support your overall health and vitality with our comprehensive wellness treatments. From IV therapy to vitamin injections, we help you feel your best from the inside out.",
+                    benefit1: "100% nutrient absorption",
+                    benefit2: "Boosts energy and immunity",
+                    benefit3: "Personalized wellness plans",
+                    benefit4: "Expert guidance and support"
+                },
                 iv: {
                     title: "IV Therapy",
                     desc: "Replenish your body with essential vitamins, minerals, and nutrients through intravenous therapy. Customized blends for energy, immunity, hydration, and more.",
@@ -419,21 +447,25 @@ const translations = {
             invitation: "Nous vous invitons à découvrir ce qui rend l'Institut des Technologies de la Peau spécial. Réservez votre consultation dès aujourd'hui et faites le premier pas vers la peau éclatante et saine que vous méritez."
         },
         features: {
+            title: "Nos services",
+            subtitle: "Découvrez notre gamme complète de traitements esthétiques avancés conçus pour vous aider à paraître et à vous sentir au mieux.",
+            learnmore: "En savoir plus",
+            seepricing: "Voir les tarifs",
             injectables: {
                 title: "Injectables",
-                link: "Découvrez nos traitements injectables."
+                desc: "Améliorez votre beauté naturelle avec des traitements injectables de précision qui offrent des résultats subtils et naturels."
             },
             face: {
-                title: "Visage",
-                link: "Découvrez nos traitements du visage."
+                title: "Traitements du visage",
+                desc: "Rajeunissez et restaurez l'éclat naturel de votre peau avec nos traitements faciaux avancés."
             },
             body: {
-                title: "Corps",
-                link: "Découvrez nos traitements corporels."
+                title: "Traitements corporels",
+                desc: "Atteignez vos objectifs de modelage corporel et de raffermissement de la peau avec nos traitements non invasifs avancés."
             },
             wellness: {
                 title: "Bien-être",
-                link: "Découvrez nos traitements de bien-être."
+                desc: "Soutenez votre santé globale et votre vitalité avec nos traitements de bien-être complets."
             }
         },
         about: {
@@ -485,6 +517,14 @@ const translations = {
             injectables: {
                 title: "Traitements injectables",
                 subtitle: "Améliorez votre beauté naturelle avec des traitements injectables de précision qui offrent des résultats subtils et naturels.",
+                featured: {
+                    title: "Traitements injectables",
+                    desc: "Améliorez votre beauté naturelle avec des traitements injectables de précision, notamment le Botox, le Dysport et les charges dermiques. Notre équipe d'experts offre des résultats subtils et naturels adaptés à vos caractéristiques uniques.",
+                    benefit1: "Traitements approuvés par la FDA",
+                    benefit2: "Résultats naturels",
+                    benefit3: "Injecteurs experts",
+                    benefit4: "Personnalisé selon vos objectifs"
+                },
                 botox: {
                     title: "Botox et Dysport",
                     desc: "Lissez les rides et les ridules avec des traitements neurotoxiques approuvés par la FDA. Parfait pour les pattes d'oie, les rides du front et les rides du lion.",
@@ -549,6 +589,14 @@ const translations = {
             body: {
                 title: "Traitements corporels",
                 subtitle: "Atteignez vos objectifs de modelage corporel et de raffermissement de la peau avec nos traitements non invasifs avancés.",
+                featured: {
+                    title: "Traitements corporels",
+                    desc: "Transformez votre corps avec nos traitements non invasifs avancés. Du modelage corporel à la réduction de la cellulite et au raffermissement de la peau, nous vous aidons à atteindre vos objectifs de bien-être.",
+                    benefit1: "Technologie non invasive",
+                    benefit2: "Résultats visibles",
+                    benefit3: "Pas de temps d'arrêt",
+                    benefit4: "Plans de traitement personnalisés"
+                },
                 contouring: {
                     title: "Modelage corporel",
                     desc: "Réduisez la graisse tenace et redessinez votre corps avec la technologie BodyFx. Traitement non invasif qui cible les cellules graisseuses tout en raffermissant la peau.",
@@ -577,6 +625,14 @@ const translations = {
             wellness: {
                 title: "Services de bien-être",
                 subtitle: "Soutenez votre santé globale et votre vitalité avec nos traitements de bien-être complets.",
+                featured: {
+                    title: "Services de bien-être",
+                    desc: "Soutenez votre santé globale et votre vitalité avec nos traitements de bien-être complets. De la thérapie IV aux injections de vitamines, nous vous aidons à vous sentir au mieux de l'intérieur.",
+                    benefit1: "100% d'absorption des nutriments",
+                    benefit2: "Augmente l'énergie et l'immunité",
+                    benefit3: "Plans de bien-être personnalisés",
+                    benefit4: "Conseils et soutien d'experts"
+                },
                 iv: {
                     title: "Thérapie IV",
                     desc: "Rechargez votre corps avec des vitamines, minéraux et nutriments essentiels grâce à la thérapie intraveineuse. Mélanges personnalisés pour l'énergie, l'immunité, l'hydratation et plus encore.",
