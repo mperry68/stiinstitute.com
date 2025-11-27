@@ -138,6 +138,48 @@
 
     <script src="/assets/js/i18n.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script>
+        // Debug logging for tip links
+        document.addEventListener('DOMContentLoaded', function() {
+            const tipLinks = document.querySelectorAll('.tip-card a[href*="/tips/"]');
+            console.log('Found', tipLinks.length, 'tip article links');
+            
+            tipLinks.forEach(function(link, index) {
+                const href = link.getAttribute('href');
+                console.log('Link', index + 1, ':', href);
+                
+                link.addEventListener('click', function(e) {
+                    console.log('=== TIP LINK CLICKED ===');
+                    console.log('Href:', href);
+                    console.log('Full URL:', window.location.origin + href);
+                    console.log('Current page:', window.location.href);
+                    console.log('Link element:', link);
+                    console.log('Event:', e);
+                    
+                    // Check if file exists (async fetch)
+                    fetch(href, { method: 'HEAD' })
+                        .then(function(response) {
+                            console.log('File exists! Status:', response.status);
+                            if (response.status === 404) {
+                                console.error('ERROR: File not found (404)');
+                                e.preventDefault();
+                                alert('Error: File not found. Check console for details.');
+                            }
+                        })
+                        .catch(function(error) {
+                            console.error('Error checking file:', error);
+                            console.log('Note: This might be normal if navigating away');
+                        });
+                });
+            });
+            
+            // Log all links on page load
+            console.log('=== ALL TIP LINKS ===');
+            tipLinks.forEach(function(link, index) {
+                console.log(index + 1 + '.', link.getAttribute('href'));
+            });
+        });
+    </script>
 </body>
 </html>
 
