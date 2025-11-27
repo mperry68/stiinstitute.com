@@ -13,6 +13,13 @@ const translations = {
             title: "Natural results.\nUniquely you.",
             cta: "BOOK YOUR CONSULT"
         },
+        welcome: {
+            title: "Welcome to Skin Technologies Institute",
+            intro: "At Skin Technologies Institute, we believe that beautiful, healthy skin is your right at every age. Located in the heart of Beaconsfield, Quebec, we're dedicated to providing you with the highest quality professional skin care treatments and personalized care that helps you look and feel your absolute best.",
+            mission: "Our mission is simple: to help you achieve natural, radiant results that enhance your unique beauty. Whether you're looking to address specific concerns, maintain your skin's health, or simply indulge in some well-deserved self-care, our expert team is here to guide you every step of the way.",
+            approach: "We combine advanced techniques with a warm, welcoming environment where you can feel comfortable and confident. From injectable treatments to rejuvenating facials, body contouring to wellness therapies, we offer a comprehensive range of services tailored to your individual needs.",
+            invitation: "We invite you to discover what makes Skin Technologies Institute special. Book your consultation today and take the first step toward the glowing, healthy skin you deserve."
+        },
         features: {
             injectables: {
                 title: "Injectables",
@@ -46,7 +53,23 @@ const translations = {
             },
             history: {
                 title: "Our Story",
-                text: "Founded with a passion for excellence in skin care, Skin Technologies Institute has been a trusted name in professional treatments. Located in Beaconsfield, Quebec, we serve clients from across the region with personalized care and attention."
+                text: "Founded in 2010 with a passion for excellence in professional skin care, Skin Technologies Institute has been a trusted name in aesthetic treatments and wellness services. Located in Beaconsfield, Quebec, we serve clients from across the Greater Montreal area and beyond, providing personalized care and exceptional results."
+            },
+            team: {
+                title: "Our Expert Team",
+                intro: "Our team consists of highly qualified medical professionals dedicated to providing safe, effective, and personalized treatments.",
+                qualifications: {
+                    title: "Professional Qualifications",
+                    medical: "Licensed medical professionals (MD, RN, NP) with specialized training in aesthetic medicine",
+                    injectables: "Certified injectors with extensive experience in Botox, dermal fillers, and advanced injection techniques",
+                    lasers: "Certified laser technicians trained on the latest aesthetic laser and energy-based devices",
+                    continuing: "Ongoing continuing education to stay current with the latest techniques and safety protocols",
+                    safety: "Comprehensive training in patient safety, infection control, and emergency procedures"
+                },
+                experience: {
+                    title: "Clinical Experience",
+                    text: "Our practitioners bring years of clinical experience in dermatology, plastic surgery, and aesthetic medicine. Each team member has completed rigorous training programs and maintains active certifications in their respective specialties. We are committed to providing evidence-based treatments that prioritize your safety and deliver natural, beautiful results."
+                }
             },
             image: {
                 alt: "STI Institute"
@@ -288,6 +311,13 @@ const translations = {
             title: "Résultats naturels.\nUnique comme vous.",
             cta: "RÉSERVER VOTRE CONSULTATION"
         },
+        welcome: {
+            title: "Bienvenue à l'Institut des Technologies de la Peau",
+            intro: "À l'Institut des Technologies de la Peau, nous croyons qu'une belle peau saine est votre droit à tout âge. Situé au cœur de Beaconsfield, Québec, nous nous engageons à vous offrir les traitements professionnels de soins de la peau de la plus haute qualité et des soins personnalisés qui vous aident à paraître et à vous sentir au mieux.",
+            mission: "Notre mission est simple : vous aider à obtenir des résultats naturels et radieux qui mettent en valeur votre beauté unique. Que vous cherchiez à résoudre des préoccupations spécifiques, à maintenir la santé de votre peau ou simplement à vous offrir un peu de bien-être mérité, notre équipe d'experts est là pour vous guider à chaque étape.",
+            approach: "Nous combinons des techniques avancées avec un environnement chaleureux et accueillant où vous pouvez vous sentir à l'aise et en confiance. Des traitements injectables aux soins du visage rajeunissants, du modelage corporel aux thérapies de bien-être, nous offrons une gamme complète de services adaptés à vos besoins individuels.",
+            invitation: "Nous vous invitons à découvrir ce qui rend l'Institut des Technologies de la Peau spécial. Réservez votre consultation dès aujourd'hui et faites le premier pas vers la peau éclatante et saine que vous méritez."
+        },
         features: {
             injectables: {
                 title: "Injectables",
@@ -321,7 +351,23 @@ const translations = {
             },
             history: {
                 title: "Notre histoire",
-                text: "Fondé avec une passion pour l'excellence en soins de la peau, l'Institut des Technologies de la Peau est un nom de confiance en traitements professionnels. Situé à Beaconsfield, Québec, nous servons des clients de toute la région avec des soins et une attention personnalisés."
+                text: "Fondé en 2010 avec une passion pour l'excellence en soins professionnels de la peau, l'Institut des Technologies de la Peau est un nom de confiance en traitements esthétiques et services de bien-être. Situé à Beaconsfield, Québec, nous servons des clients de toute la région du Grand Montréal et au-delà, offrant des soins personnalisés et des résultats exceptionnels."
+            },
+            team: {
+                title: "Notre équipe d'experts",
+                intro: "Notre équipe est composée de professionnels médicaux hautement qualifiés dédiés à fournir des traitements sûrs, efficaces et personnalisés.",
+                qualifications: {
+                    title: "Qualifications professionnelles",
+                    medical: "Professionnels médicaux autorisés (MD, RN, NP) avec une formation spécialisée en médecine esthétique",
+                    injectables: "Injecteurs certifiés avec une vaste expérience en Botox, charges dermiques et techniques d'injection avancées",
+                    lasers: "Techniciens laser certifiés formés sur les derniers dispositifs laser esthétiques et à base d'énergie",
+                    continuing: "Formation continue pour rester à jour avec les dernières techniques et protocoles de sécurité",
+                    safety: "Formation complète en sécurité des patients, contrôle des infections et procédures d'urgence"
+                },
+                experience: {
+                    title: "Expérience clinique",
+                    text: "Nos praticiens apportent des années d'expérience clinique en dermatologie, chirurgie plastique et médecine esthétique. Chaque membre de l'équipe a terminé des programmes de formation rigoureux et maintient des certifications actives dans leurs spécialités respectives. Nous nous engageons à fournir des traitements fondés sur des preuves qui priorisent votre sécurité et offrent des résultats naturels et beaux."
+                }
             },
             image: {
                 alt: "Institut STI"
@@ -591,21 +637,31 @@ function setLanguage(lang) {
         }
     });
     
-    // Translate HTML content (for office hours)
+    // Translate HTML content (for office hours and other HTML content)
     document.querySelectorAll('[data-i18n-html]').forEach(element => {
         const key = element.dataset.i18nHtml;
         const translation = getTranslation(key);
         if (translation) {
             element.innerHTML = translation;
+        } else {
+            // Fallback to English if translation not found
+            const englishTranslation = getTranslationForLang(key, 'en');
+            if (englishTranslation) {
+                element.innerHTML = englishTranslation;
+            }
         }
     });
 }
 
 function getTranslation(key) {
+    return getTranslationForLang(key, currentLang);
+}
+
+function getTranslationForLang(key, lang) {
     const keys = key.split('.');
-    let value = translations[currentLang];
+    let value = translations[lang];
     
-    // Try current language first
+    // Try requested language first
     for (const k of keys) {
         if (value && typeof value === 'object' && k in value) {
             value = value[k];
@@ -616,7 +672,7 @@ function getTranslation(key) {
     }
     
     // If translation not found and not already English, try English as fallback
-    if (!value && currentLang !== 'en') {
+    if (!value && lang !== 'en') {
         value = translations.en;
         for (const k of keys) {
             if (value && typeof value === 'object' && k in value) {

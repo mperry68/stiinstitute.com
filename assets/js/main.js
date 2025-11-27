@@ -10,12 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.toggle('active');
             mobileMenuToggle.classList.toggle('active');
         });
+        
+        // Close menu when clicking on a link
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                nav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
     }
     
-    // Set current year in footer
+    // Set copyright year in footer
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
+        yearElement.textContent = '2024';
     }
     
     // Contact form handling
@@ -59,43 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add CSS for mobile menu
-const style = document.createElement('style');
-style.textContent = `
-    @media (max-width: 768px) {
-        .nav.active {
-            display: block;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            box-shadow: var(--shadow);
-            padding: 1rem;
-        }
-        
-        .nav.active .nav-list {
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-        
-        .nav-list a.active {
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-    }
-`;
-document.head.appendChild(style);
+// Mobile menu styles are now in main.css
 
