@@ -44,20 +44,36 @@ const translations = {
         },
         about: {
             title: "About Skin Technologies Institute",
+            intro: "Founded in 2010, Skin Technologies Institute has been a trusted name in aesthetic treatments and wellness services. Located in Beaconsfield, Quebec, we serve clients from across the Greater Montreal area and beyond, providing personalized care and exceptional results.",
             mission: {
                 title: "Our Mission",
-                text: "At Skin Technologies Institute, we are committed to providing the highest quality professional skin care services. Our mission is to help you achieve natural, beautiful results that enhance your unique features."
+                text: "At Skin Technologies Institute, we are committed to providing the highest quality professional skin care services. Our mission is to help you achieve natural, beautiful results that enhance your unique features.",
+                commitment: "We combine medical expertise with cutting-edge technology to deliver personalized solutions for your unique skin concerns and wellness goals. Every treatment is tailored to your individual needs, ensuring you receive the care and attention you deserve."
             },
             values: {
                 title: "Our Values",
-                excellence: "Excellence in every treatment",
-                integrity: "Integrity and professionalism",
-                innovation: "Innovation in skin care techniques",
-                community: "Building lasting relationships with our clients"
+                subtitle: "The principles that guide everything we do",
+                excellence: {
+                    title: "Excellence",
+                    desc: "We strive for excellence in every treatment, using only the highest quality products and most advanced techniques to ensure exceptional results."
+                },
+                integrity: {
+                    title: "Integrity",
+                    desc: "We maintain the highest standards of integrity and professionalism, building trust through honest communication and ethical practices."
+                },
+                innovation: {
+                    title: "Innovation",
+                    desc: "We stay at the forefront of skin care innovation, continuously learning and adopting the latest techniques and technologies."
+                },
+                community: {
+                    title: "Community",
+                    desc: "We believe in building lasting relationships with our clients, creating a welcoming community where everyone feels valued and cared for."
+                }
             },
             history: {
                 title: "Our Story",
-                text: "Founded in 2010 with a passion for excellence in professional skin care, Skin Technologies Institute has been a trusted name in aesthetic treatments and wellness services. Located in Beaconsfield, Quebec, we serve clients from across the Greater Montreal area and beyond, providing personalized care and exceptional results."
+                text: "Founded in 2010 with a passion for excellence in professional skin care, Skin Technologies Institute has grown from a small practice to a trusted destination for aesthetic treatments and wellness services. Our journey has been guided by a commitment to providing personalized care, using the latest technologies, and maintaining the highest standards of safety and professionalism.",
+                growth: "Over the years, we've expanded our services to include a comprehensive range of treatments, from injectables and facial treatments to body contouring and wellness therapies. What remains constant is our dedication to helping each client look and feel their absolute best."
             },
             team: {
                 title: "Our Expert Team",
@@ -72,8 +88,14 @@ const translations = {
                 },
                 experience: {
                     title: "Clinical Experience",
-                    text: "Our practitioners bring years of clinical experience in dermatology, plastic surgery, and aesthetic medicine. Each team member has completed rigorous training programs and maintains active certifications in their respective specialties. We are committed to providing evidence-based treatments that prioritize your safety and deliver natural, beautiful results."
+                    text: "Our practitioners bring years of clinical experience in dermatology, plastic surgery, and aesthetic medicine. Each team member has completed rigorous training programs and maintains active certifications in their respective specialties. We are committed to providing evidence-based treatments that prioritize your safety and deliver natural, beautiful results.",
+                    commitment: "We understand that every client is unique, and we take the time to listen to your concerns, answer your questions, and develop a treatment plan that aligns with your goals. Your comfort, safety, and satisfaction are our top priorities."
                 }
+            },
+            cta: {
+                title: "Ready to Begin Your Journey?",
+                desc: "Experience the difference that expert care and personalized attention can make. Schedule your consultation today.",
+                button: "Book Your Consultation"
             },
             image: {
                 alt: "STI Institute"
@@ -470,20 +492,36 @@ const translations = {
         },
         about: {
             title: "À propos de l'Institut des Technologies de la Peau",
+            intro: "Fondé en 2010, l'Institut des Technologies de la Peau est un nom de confiance en traitements esthétiques et services de bien-être. Situé à Beaconsfield, Québec, nous servons des clients de toute la région du Grand Montréal et au-delà, offrant des soins personnalisés et des résultats exceptionnels.",
             mission: {
                 title: "Notre mission",
-                text: "À l'Institut des Technologies de la Peau, nous nous engageons à fournir des services professionnels de soins de la peau de la plus haute qualité. Notre mission est de vous aider à obtenir des résultats naturels et beaux qui mettent en valeur vos caractéristiques uniques."
+                text: "À l'Institut des Technologies de la Peau, nous nous engageons à fournir des services professionnels de soins de la peau de la plus haute qualité. Notre mission est de vous aider à obtenir des résultats naturels et beaux qui mettent en valeur vos caractéristiques uniques.",
+                commitment: "Nous combinons l'expertise médicale avec une technologie de pointe pour offrir des solutions personnalisées à vos préoccupations cutanées uniques et à vos objectifs de bien-être. Chaque traitement est adapté à vos besoins individuels, garantissant que vous recevez les soins et l'attention que vous méritez."
             },
             values: {
                 title: "Nos valeurs",
-                excellence: "Excellence dans chaque traitement",
-                integrity: "Intégrité et professionnalisme",
-                innovation: "Innovation dans les techniques de soins de la peau",
-                community: "Construire des relations durables avec nos clients"
+                subtitle: "Les principes qui guident tout ce que nous faisons",
+                excellence: {
+                    title: "Excellence",
+                    desc: "Nous visons l'excellence dans chaque traitement, en utilisant uniquement les produits de la plus haute qualité et les techniques les plus avancées pour garantir des résultats exceptionnels."
+                },
+                integrity: {
+                    title: "Intégrité",
+                    desc: "Nous maintenons les plus hauts standards d'intégrité et de professionnalisme, en établissant la confiance grâce à une communication honnête et des pratiques éthiques."
+                },
+                innovation: {
+                    title: "Innovation",
+                    desc: "Nous restons à l'avant-garde de l'innovation en soins de la peau, en apprenant et en adoptant continuellement les dernières techniques et technologies."
+                },
+                community: {
+                    title: "Communauté",
+                    desc: "Nous croyons en la construction de relations durables avec nos clients, en créant une communauté accueillante où chacun se sent valorisé et pris en charge."
+                }
             },
             history: {
                 title: "Notre histoire",
-                text: "Fondé en 2010 avec une passion pour l'excellence en soins professionnels de la peau, l'Institut des Technologies de la Peau est un nom de confiance en traitements esthétiques et services de bien-être. Situé à Beaconsfield, Québec, nous servons des clients de toute la région du Grand Montréal et au-delà, offrant des soins personnalisés et des résultats exceptionnels."
+                text: "Fondé en 2010 avec une passion pour l'excellence en soins professionnels de la peau, l'Institut des Technologies de la Peau est passé d'une petite pratique à une destination de confiance pour les traitements esthétiques et les services de bien-être. Notre parcours a été guidé par un engagement à fournir des soins personnalisés, à utiliser les dernières technologies et à maintenir les plus hauts standards de sécurité et de professionnalisme.",
+                growth: "Au fil des ans, nous avons élargi nos services pour inclure une gamme complète de traitements, des injectables et traitements faciaux au modelage corporel et aux thérapies de bien-être. Ce qui reste constant, c'est notre dévouement à aider chaque client à paraître et à se sentir au mieux."
             },
             team: {
                 title: "Notre équipe d'experts",
@@ -498,8 +536,14 @@ const translations = {
                 },
                 experience: {
                     title: "Expérience clinique",
-                    text: "Nos praticiens apportent des années d'expérience clinique en dermatologie, chirurgie plastique et médecine esthétique. Chaque membre de l'équipe a terminé des programmes de formation rigoureux et maintient des certifications actives dans leurs spécialités respectives. Nous nous engageons à fournir des traitements fondés sur des preuves qui priorisent votre sécurité et offrent des résultats naturels et beaux."
+                    text: "Nos praticiens apportent des années d'expérience clinique en dermatologie, chirurgie plastique et médecine esthétique. Chaque membre de l'équipe a terminé des programmes de formation rigoureux et maintient des certifications actives dans leurs spécialités respectives. Nous nous engageons à fournir des traitements fondés sur des preuves qui priorisent votre sécurité et offrent des résultats naturels et beaux.",
+                    commitment: "Nous comprenons que chaque client est unique, et nous prenons le temps d'écouter vos préoccupations, de répondre à vos questions et d'élaborer un plan de traitement qui correspond à vos objectifs. Votre confort, votre sécurité et votre satisfaction sont nos priorités absolues."
                 }
+            },
+            cta: {
+                title: "Prêt à commencer votre parcours?",
+                desc: "Découvrez la différence que des soins experts et une attention personnalisée peuvent faire. Planifiez votre consultation dès aujourd'hui.",
+                button: "Réserver votre consultation"
             },
             image: {
                 alt: "Institut STI"

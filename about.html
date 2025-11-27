@@ -7,6 +7,182 @@
     <title>About Us | Skin Technologies Institute</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <style>
+        .about-hero {
+            background: var(--white);
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .about-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .about-hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        .about-hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .about-section {
+            padding: 4rem 0;
+        }
+        .about-section:nth-child(even) {
+            background: var(--bg-light);
+        }
+        .about-section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .about-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-mission-text h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .about-mission-text p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+        .about-mission-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .value-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .value-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .value-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+        .history-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .history-content h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .history-content p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-color);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .team-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .team-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .team-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .team-card li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        .team-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .team-card p {
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            .about-mission {
+                grid-template-columns: 1fr;
+            }
+            .about-mission-image {
+                height: 300px;
+            }
+            .values-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -41,50 +217,95 @@
     </header>
 
     <main>
-        <section class="page-header">
+        <section class="about-hero">
             <div class="container">
-                <h1 data-i18n="about.title">About Skin Technologies Institute</h1>
+                <div class="about-hero-content">
+                    <h1 data-i18n="about.title">About Skin Technologies Institute</h1>
+                    <p data-i18n="about.intro">Founded in 2010, Skin Technologies Institute has been a trusted name in aesthetic treatments and wellness services. Located in Beaconsfield, Quebec, we serve clients from across the Greater Montreal area and beyond, providing personalized care and exceptional results.</p>
+                </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="about-content-wrapper">
-                    <div class="content-text">
+        <section class="about-section">
+            <div class="about-section-content">
+                <div class="about-mission">
+                    <div class="about-mission-text">
                         <h2 data-i18n="about.mission.title">Our Mission</h2>
                         <p data-i18n="about.mission.text">At Skin Technologies Institute, we are committed to providing the highest quality professional skin care services. Our mission is to help you achieve natural, beautiful results that enhance your unique features.</p>
-                        
-                        <div class="content-image-float">
-                            <img src="/assets/images/resize-The-Dorchester-Spa-without-receptionist-High-Res-1940x1449-2907394711.jpg" alt="STI Institute">
-                        </div>
-                        
-                        <h2 data-i18n="about.values.title">Our Values</h2>
-                        <ul class="values-list">
-                            <li data-i18n="about.values.excellence">Excellence in every treatment</li>
-                            <li data-i18n="about.values.integrity">Integrity and professionalism</li>
-                            <li data-i18n="about.values.innovation">Innovation in skin care techniques</li>
-                            <li data-i18n="about.values.community">Building lasting relationships with our clients</li>
-                        </ul>
+                        <p data-i18n="about.mission.commitment">We combine medical expertise with cutting-edge technology to deliver personalized solutions for your unique skin concerns and wellness goals. Every treatment is tailored to your individual needs, ensuring you receive the care and attention you deserve.</p>
+                    </div>
+                    <div>
+                        <img src="/assets/images/resize-The-Dorchester-Spa-without-receptionist-High-Res-1940x1449-2907394711.jpg" alt="STI Institute" class="about-mission-image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <h2 data-i18n="about.history.title">Our Story</h2>
-                        <p data-i18n="about.history.text">Founded in 2010 with a passion for excellence in professional skin care, Skin Technologies Institute has been a trusted name in aesthetic treatments and wellness services. Located in Beaconsfield, Quebec, we serve clients from across the Greater Montreal area and beyond, providing personalized care and exceptional results.</p>
+        <section class="about-section">
+            <div class="about-section-content">
+                <h2 class="section-title" data-i18n="about.values.title">Our Values</h2>
+                <p class="section-subtitle" data-i18n="about.values.subtitle">The principles that guide everything we do</p>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3 data-i18n="about.values.excellence.title">Excellence</h3>
+                        <p data-i18n="about.values.excellence.desc">We strive for excellence in every treatment, using only the highest quality products and most advanced techniques to ensure exceptional results.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 data-i18n="about.values.integrity.title">Integrity</h3>
+                        <p data-i18n="about.values.integrity.desc">We maintain the highest standards of integrity and professionalism, building trust through honest communication and ethical practices.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 data-i18n="about.values.innovation.title">Innovation</h3>
+                        <p data-i18n="about.values.innovation.desc">We stay at the forefront of skin care innovation, continuously learning and adopting the latest techniques and technologies.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 data-i18n="about.values.community.title">Community</h3>
+                        <p data-i18n="about.values.community.desc">We believe in building lasting relationships with our clients, creating a welcoming community where everyone feels valued and cared for.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <h2 data-i18n="about.team.title">Our Expert Team</h2>
-                        <p data-i18n="about.team.intro">Our team consists of highly qualified medical professionals dedicated to providing safe, effective, and personalized treatments.</p>
-                        
+        <section class="about-section">
+            <div class="about-section-content">
+                <div class="history-content">
+                    <h2 data-i18n="about.history.title">Our Story</h2>
+                    <p data-i18n="about.history.text">Founded in 2010 with a passion for excellence in professional skin care, Skin Technologies Institute has grown from a small practice to a trusted destination for aesthetic treatments and wellness services. Our journey has been guided by a commitment to providing personalized care, using the latest technologies, and maintaining the highest standards of safety and professionalism.</p>
+                    <p data-i18n="about.history.growth">Over the years, we've expanded our services to include a comprehensive range of treatments, from injectables and facial treatments to body contouring and wellness therapies. What remains constant is our dedication to helping each client look and feel their absolute best.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-section-content">
+                <h2 class="section-title" data-i18n="about.team.title">Our Expert Team</h2>
+                <p class="section-subtitle" data-i18n="about.team.intro">Our team consists of highly qualified medical professionals dedicated to providing safe, effective, and personalized treatments.</p>
+                
+                <div class="team-grid">
+                    <div class="team-card">
                         <h3 data-i18n="about.team.qualifications.title">Professional Qualifications</h3>
-                        <ul class="values-list">
+                        <ul>
                             <li data-i18n="about.team.qualifications.medical">Licensed medical professionals (MD, RN, NP) with specialized training in aesthetic medicine</li>
                             <li data-i18n="about.team.qualifications.injectables">Certified injectors with extensive experience in Botox, dermal fillers, and advanced injection techniques</li>
                             <li data-i18n="about.team.qualifications.lasers">Certified laser technicians trained on the latest aesthetic laser and energy-based devices</li>
                             <li data-i18n="about.team.qualifications.continuing">Ongoing continuing education to stay current with the latest techniques and safety protocols</li>
                             <li data-i18n="about.team.qualifications.safety">Comprehensive training in patient safety, infection control, and emergency procedures</li>
                         </ul>
-
+                    </div>
+                    <div class="team-card">
                         <h3 data-i18n="about.team.experience.title">Clinical Experience</h3>
                         <p data-i18n="about.team.experience.text">Our practitioners bring years of clinical experience in dermatology, plastic surgery, and aesthetic medicine. Each team member has completed rigorous training programs and maintains active certifications in their respective specialties. We are committed to providing evidence-based treatments that prioritize your safety and deliver natural, beautiful results.</p>
+                        <p data-i18n="about.team.experience.commitment">We understand that every client is unique, and we take the time to listen to your concerns, answer your questions, and develop a treatment plan that aligns with your goals. Your comfort, safety, and satisfaction are our top priorities.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="about-section" style="text-align: center; padding: 4rem 0;">
+            <div class="about-section-content">
+                <h2 style="font-size: 2rem; font-weight: 300; color: var(--primary-color); margin-bottom: 1.5rem;" data-i18n="about.cta.title">Ready to Begin Your Journey?</h2>
+                <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="about.cta.desc">Experience the difference that expert care and personalized attention can make. Schedule your consultation today.</p>
+                <a href="/contact.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2.5rem;" data-i18n="about.cta.button">Book Your Consultation</a>
             </div>
         </section>
     </main>
@@ -120,4 +341,3 @@
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
-
