@@ -308,10 +308,11 @@ address {
 
 /* Page Header */
 .page-header {
-    background: var(--bg-main);
+    background: var(--white);
     color: var(--text-color);
     padding: 4rem 0 2rem;
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .page-header h1 {
@@ -319,6 +320,7 @@ address {
     margin-bottom: 0.5rem;
     font-weight: 300;
     letter-spacing: -0.5px;
+    color: var(--primary-color);
 }
 
 .page-subtitle {
@@ -339,6 +341,16 @@ address {
     align-items: center;
 }
 
+/* About Page Specific Layout */
+.about-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-text {
+    line-height: 1.8;
+}
+
 .content-text h2 {
     color: var(--primary-color);
     margin-top: 2rem;
@@ -349,6 +361,14 @@ address {
 
 .content-text h2:first-child {
     margin-top: 0;
+}
+
+.content-text h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .values-list {
@@ -375,6 +395,30 @@ address {
     width: 100%;
     border-radius: 8px;
     box-shadow: var(--shadow);
+}
+
+/* Floating Image for About Page */
+.content-image-float {
+    float: right;
+    width: 45%;
+    max-width: 500px;
+    margin: 0 0 2rem 2rem;
+    shape-outside: margin-box;
+}
+
+.content-image-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+/* Clear float after image section */
+.content-text::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Services Grid */
@@ -967,6 +1011,14 @@ address {
 
     .content-image {
         order: -1;
+    }
+
+    /* About page floating image on mobile */
+    .content-image-float {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 2rem 0;
     }
 
     /* Pricing */
