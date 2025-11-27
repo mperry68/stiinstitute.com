@@ -32,6 +32,15 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+        .service-category-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
         .service-category-header h2 {
             font-size: 2.2rem;
             font-weight: 300;
@@ -57,7 +66,6 @@
             background: var(--white);
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
@@ -65,11 +73,6 @@
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        .service-card-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
         }
         .service-card-content {
             padding: 2rem;
@@ -180,6 +183,9 @@
             .service-category-header h2 {
                 font-size: 1.8rem;
             }
+            .service-category-image {
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -233,12 +239,12 @@
                 <!-- Injectables Section -->
                 <div id="injectables" class="service-category">
                     <div class="service-category-header">
+                        <img src="/assets/images/OIP-3102335673.jpeg" alt="Injectable Treatments" class="service-category-image">
                         <h2 data-i18n="services.injectables.title">Injectable Treatments</h2>
                         <p data-i18n="services.injectables.subtitle">Enhance your natural beauty with precision injectable treatments that deliver subtle, natural-looking results.</p>
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Botox & Dysport" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.injectables.botox.title">Botox & Dysport</h3>
                                 <p data-i18n="services.injectables.botox.desc">Smooth away fine lines and wrinkles with FDA-approved neurotoxin treatments. Perfect for crow's feet, forehead lines, and frown lines.</p>
@@ -255,7 +261,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Dermal Fillers" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.injectables.fillers.title">Dermal Fillers</h3>
                                 <p data-i18n="services.injectables.fillers.desc">Restore volume, smooth lines, and enhance facial contours with premium hyaluronic acid fillers. Ideal for lips, cheeks, and under-eye areas.</p>
@@ -272,7 +277,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3102335673.jpeg" alt="Lip Enhancements" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.injectables.lips.title">Lip Enhancements</h3>
                                 <p data-i18n="services.injectables.lips.desc">Achieve fuller, more defined lips with expertly placed dermal fillers. We create natural-looking volume that enhances your unique features.</p>
@@ -294,6 +298,7 @@
                 <!-- Face Treatments Section -->
                 <div id="face" class="service-category">
                     <div class="service-category-header">
+                        <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Face Treatments" class="service-category-image">
                         <h2 data-i18n="services.face.title">Face Treatments</h2>
                         <p data-i18n="services.face.subtitle">Rejuvenate and restore your skin's natural radiance with our advanced facial treatments.</p>
                     </div>
@@ -316,7 +321,6 @@
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Chemical Peels" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.face.chemical.title">Chemical Peels</h3>
                                 <p data-i18n="services.face.chemical.desc">Resurface and renew your skin with customized chemical peels. Effective for treating acne, hyperpigmentation, fine lines, and uneven texture.</p>
@@ -333,7 +337,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Microneedling" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.face.microneedling.title">Microneedling</h3>
                                 <p data-i18n="services.face.microneedling.desc">Stimulate your skin's natural collagen production with microneedling. Ideal for reducing scars, fine lines, and improving overall skin texture.</p>
@@ -350,7 +353,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/portrait-beautiful-woman-spa-treatment_289161-586-2266376188.jpg" alt="Laser & IPL" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.face.laser.title">Laser & IPL Treatments</h3>
                                 <p data-i18n="services.face.laser.desc">Advanced laser and IPL technology to address pigmentation, redness, fine lines, and overall skin rejuvenation with precision and effectiveness.</p>
@@ -372,12 +374,12 @@
                 <!-- Body Treatments Section -->
                 <div id="body" class="service-category">
                     <div class="service-category-header">
+                        <img src="/assets/images/OIP-3870660155.jpeg" alt="Body Treatments" class="service-category-image">
                         <h2 data-i18n="services.body.title">Body Treatments</h2>
                         <p data-i18n="services.body.subtitle">Achieve your body contouring and skin tightening goals with our advanced non-invasive treatments.</p>
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Body Contouring" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.body.contouring.title">Body Contouring</h3>
                                 <p data-i18n="services.body.contouring.desc">Reduce stubborn fat and reshape your body with BodyFx technology. Non-invasive treatment that targets fat cells while tightening skin.</p>
@@ -394,7 +396,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Cellulite Reduction" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.body.cellulite.title">Cellulite Reduction</h3>
                                 <p data-i18n="services.body.cellulite.desc">Smooth away cellulite with VelaShape III technology. This advanced treatment combines radiofrequency, infrared light, and vacuum massage for visible results.</p>
@@ -411,7 +412,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-3870660155.jpeg" alt="Skin Tightening" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.body.tightening.title">Skin Tightening</h3>
                                 <p data-i18n="services.body.tightening.desc">Firm and tighten loose skin with Potenza RF Microneedling. This treatment stimulates collagen production for tighter, more youthful-looking skin.</p>
@@ -433,12 +433,12 @@
                 <!-- Wellness Section -->
                 <div id="wellness" class="service-category">
                     <div class="service-category-header">
+                        <img src="/assets/images/OIP-48886381.jpeg" alt="Wellness Services" class="service-category-image">
                         <h2 data-i18n="services.wellness.title">Wellness Services</h2>
                         <p data-i18n="services.wellness.subtitle">Support your overall health and vitality with our comprehensive wellness treatments.</p>
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <img src="/assets/images/OIP-48886381.jpeg" alt="IV Therapy" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.wellness.iv.title">IV Therapy</h3>
                                 <p data-i18n="services.wellness.iv.desc">Replenish your body with essential vitamins, minerals, and nutrients through intravenous therapy. Customized blends for energy, immunity, hydration, and more.</p>
@@ -455,7 +455,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-48886381.jpeg" alt="Vitamin Injections" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.wellness.vitamin.title">Vitamin Injections</h3>
                                 <p data-i18n="services.wellness.vitamin.desc">Quick and effective vitamin B12 injections to boost your energy, metabolism, and overall wellness. Perfect for busy lifestyles.</p>
@@ -472,7 +471,6 @@
                             </div>
                         </div>
                         <div class="service-card">
-                            <img src="/assets/images/OIP-48886381.jpeg" alt="Wellness Consultation" class="service-card-image">
                             <div class="service-card-content">
                                 <h3 data-i18n="services.wellness.consult.title">Wellness Consultation</h3>
                                 <p data-i18n="services.wellness.consult.desc">Comprehensive wellness assessment to create a personalized plan for your health and vitality goals. Our experts will guide you toward optimal wellness.</p>
