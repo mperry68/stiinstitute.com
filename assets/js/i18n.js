@@ -89,41 +89,119 @@ const translations = {
         },
         pricing: {
             title: "Pricing",
-            subtitle: "Transparent pricing for all our services",
+            subtitle: "À La Carte Menu",
             cta: "Book Consultation",
-            contact: "Contact Us",
-            note: "All prices are subject to change. Please contact us for a personalized consultation and accurate pricing.",
+            contact: "Book Your Consultation",
+            note: "All prices are subject to change. Consultation required for personalized treatment plans. Package discounts apply to same treatment type.",
+            promotions: {
+                title: "Special Offers",
+                first: {
+                    badge: "NEW CLIENT",
+                    title: "First Time Client",
+                    desc: "Enjoy a special introductory discount on your first visit"
+                },
+                three: {
+                    badge: "5% OFF",
+                    title: "3 Session Package",
+                    desc: "Save 5% when you purchase 3 sessions"
+                },
+                six: {
+                    badge: "10% OFF",
+                    title: "6 Session Package",
+                    desc: "Save 10% when you purchase 6 sessions"
+                }
+            },
             injectables: {
-                title: "Injectables",
-                price: "Starting at 350",
-                item1: "Botox - Per Unit",
-                item2: "Dermal Fillers - Per Syringe",
-                item3: "Lip Enhancement",
-                item4: "Consultation Included"
+                title: "Injectable Treatments",
+                botox: {
+                    title: "Botox",
+                    desc: "Per unit"
+                },
+                dysport: {
+                    title: "Dysport",
+                    desc: "Per unit"
+                },
+                filler: {
+                    title: "Dermal Filler (1ml)",
+                    desc: "Juvederm, Restylane, or similar"
+                },
+                lip: {
+                    title: "Lip Enhancement",
+                    desc: "0.5ml - 1ml"
+                },
+                cheek: {
+                    title: "Cheek Enhancement",
+                    desc: "Per syringe"
+                },
+                consult: {
+                    title: "Consultation",
+                    desc: "Complimentary with treatment"
+                }
             },
             face: {
                 title: "Face Treatments",
-                price: "Starting at 150",
-                item1: "Hydrafacial",
-                item2: "Chemical Peels",
-                item3: "Microdermabrasion",
-                item4: "Custom Facial"
+                hydrafacial: {
+                    title: "Hydrafacial",
+                    desc: "Deep cleansing facial treatment"
+                },
+                chemical: {
+                    title: "Chemical Peel",
+                    desc: "Light to medium depth"
+                },
+                micro: {
+                    title: "Microdermabrasion",
+                    desc: "Exfoliation and skin renewal"
+                },
+                microneedling: {
+                    title: "Microneedling",
+                    desc: "Collagen induction therapy"
+                },
+                ipl: {
+                    title: "IPL Photofacial",
+                    desc: "Pigmentation and redness reduction"
+                },
+                laser: {
+                    title: "Laser Resurfacing",
+                    desc: "Fractional laser treatment"
+                },
+                custom: {
+                    title: "Custom Facial",
+                    desc: "Tailored to your skin needs"
+                }
             },
             body: {
                 title: "Body Treatments",
-                price: "Starting at 200",
-                item1: "Body Contouring",
-                item2: "Cellulite Reduction",
-                item3: "Skin Tightening",
-                item4: "Body Wraps"
+                bodyfx: {
+                    title: "BodyFx",
+                    desc: "Fat reduction and skin tightening"
+                },
+                velashape: {
+                    title: "VelaShape III",
+                    desc: "Cellulite reduction"
+                },
+                potenza: {
+                    title: "Potenza RF Microneedling",
+                    desc: "Body skin tightening"
+                },
+                wrap: {
+                    title: "Body Wrap",
+                    desc: "Detoxifying and contouring"
+                }
             },
             wellness: {
                 title: "Wellness",
-                price: "Starting at 175",
-                item1: "IV Therapy",
-                item2: "Vitamin Injections",
-                item3: "Wellness Consultation",
-                item4: "Nutritional Support"
+                iv: {
+                    title: "IV Therapy",
+                    desc: "Vitamin infusion therapy"
+                },
+                vitamin: {
+                    title: "Vitamin B12 Injection",
+                    desc: "Energy and metabolism boost"
+                },
+                consult: {
+                    title: "Wellness Consultation",
+                    desc: "Personalized wellness assessment"
+                }
             }
         },
         tips: {
@@ -286,41 +364,119 @@ const translations = {
         },
         pricing: {
             title: "Tarifs",
-            subtitle: "Tarification transparente pour tous nos services",
+            subtitle: "Menu À La Carte",
             cta: "Réserver une consultation",
-            contact: "Contactez-nous",
-            note: "Tous les prix sont sujets à changement. Veuillez nous contacter pour une consultation personnalisée et des tarifs précis.",
+            contact: "Réserver votre consultation",
+            note: "Tous les prix sont sujets à changement. Une consultation est requise pour des plans de traitement personnalisés. Les remises sur forfaits s'appliquent au même type de traitement.",
+            promotions: {
+                title: "Offres spéciales",
+                first: {
+                    badge: "NOUVEAU CLIENT",
+                    title: "Premier client",
+                    desc: "Profitez d'une remise d'introduction spéciale lors de votre première visite"
+                },
+                three: {
+                    badge: "5% DE RÉDUCTION",
+                    title: "Forfait 3 séances",
+                    desc: "Économisez 5% lors de l'achat de 3 séances"
+                },
+                six: {
+                    badge: "10% DE RÉDUCTION",
+                    title: "Forfait 6 séances",
+                    desc: "Économisez 10% lors de l'achat de 6 séances"
+                }
+            },
             injectables: {
-                title: "Injectables",
-                price: "À partir de 350",
-                item1: "Botox - Par unité",
-                item2: "Charges dermiques - Par seringue",
-                item3: "Amélioration des lèvres",
-                item4: "Consultation incluse"
+                title: "Traitements injectables",
+                botox: {
+                    title: "Botox",
+                    desc: "Par unité"
+                },
+                dysport: {
+                    title: "Dysport",
+                    desc: "Par unité"
+                },
+                filler: {
+                    title: "Charge dermique (1ml)",
+                    desc: "Juvederm, Restylane ou similaire"
+                },
+                lip: {
+                    title: "Amélioration des lèvres",
+                    desc: "0.5ml - 1ml"
+                },
+                cheek: {
+                    title: "Amélioration des joues",
+                    desc: "Par seringue"
+                },
+                consult: {
+                    title: "Consultation",
+                    desc: "Gratuite avec traitement"
+                }
             },
             face: {
                 title: "Traitements du visage",
-                price: "À partir de 150",
-                item1: "Hydrafacial",
-                item2: "Peelings chimiques",
-                item3: "Microdermabrasion",
-                item4: "Soin du visage personnalisé"
+                hydrafacial: {
+                    title: "Hydrafacial",
+                    desc: "Traitement facial de nettoyage en profondeur"
+                },
+                chemical: {
+                    title: "Peeling chimique",
+                    desc: "Profondeur légère à moyenne"
+                },
+                micro: {
+                    title: "Microdermabrasion",
+                    desc: "Exfoliation et renouvellement de la peau"
+                },
+                microneedling: {
+                    title: "Microneedling",
+                    desc: "Thérapie d'induction du collagène"
+                },
+                ipl: {
+                    title: "Photofacial IPL",
+                    desc: "Réduction de la pigmentation et des rougeurs"
+                },
+                laser: {
+                    title: "Resurfaçage au laser",
+                    desc: "Traitement laser fractionnel"
+                },
+                custom: {
+                    title: "Soin du visage personnalisé",
+                    desc: "Adapté à vos besoins cutanés"
+                }
             },
             body: {
                 title: "Traitements corporels",
-                price: "À partir de 200",
-                item1: "Modelage corporel",
-                item2: "Réduction de la cellulite",
-                item3: "Raffermissement de la peau",
-                item4: "Enveloppements corporels"
+                bodyfx: {
+                    title: "BodyFx",
+                    desc: "Réduction des graisses et raffermissement de la peau"
+                },
+                velashape: {
+                    title: "VelaShape III",
+                    desc: "Réduction de la cellulite"
+                },
+                potenza: {
+                    title: "Microneedling RF Potenza",
+                    desc: "Raffermissement de la peau du corps"
+                },
+                wrap: {
+                    title: "Enveloppement corporel",
+                    desc: "Détoxifiant et modelant"
+                }
             },
             wellness: {
                 title: "Bien-être",
-                price: "À partir de 175",
-                item1: "Thérapie IV",
-                item2: "Injections de vitamines",
-                item3: "Consultation de bien-être",
-                item4: "Soutien nutritionnel"
+                iv: {
+                    title: "Thérapie IV",
+                    desc: "Thérapie de perfusion de vitamines"
+                },
+                vitamin: {
+                    title: "Injection de vitamine B12",
+                    desc: "Boost d'énergie et de métabolisme"
+                },
+                consult: {
+                    title: "Consultation de bien-être",
+                    desc: "Évaluation de bien-être personnalisée"
+                }
             }
         },
         tips: {
@@ -449,11 +605,25 @@ function getTranslation(key) {
     const keys = key.split('.');
     let value = translations[currentLang];
     
+    // Try current language first
     for (const k of keys) {
         if (value && typeof value === 'object' && k in value) {
             value = value[k];
         } else {
-            return null;
+            value = null;
+            break;
+        }
+    }
+    
+    // If translation not found and not already English, try English as fallback
+    if (!value && currentLang !== 'en') {
+        value = translations.en;
+        for (const k of keys) {
+            if (value && typeof value === 'object' && k in value) {
+                value = value[k];
+            } else {
+                return null;
+            }
         }
     }
     
@@ -462,6 +632,11 @@ function getTranslation(key) {
 
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
+    // Ensure English is always available as fallback
+    if (!translations.en) {
+        console.warn('English translations not found - this should not happen');
+    }
+    
     setLanguage(currentLang);
     
     // Add event listeners to language buttons

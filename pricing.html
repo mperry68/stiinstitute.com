@@ -44,73 +44,206 @@
         <section class="page-header">
             <div class="container">
                 <h1 data-i18n="pricing.title">Pricing</h1>
-                <p class="page-subtitle" data-i18n="pricing.subtitle">Transparent pricing for all our services</p>
+                <p class="page-subtitle" data-i18n="pricing.subtitle">À La Carte Menu</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3 data-i18n="pricing.injectables.title">Injectables</h3>
-                        <div class="price">
-                            <span class="price-currency">$</span><span data-i18n="pricing.injectables.price">Starting at 350</span>
+                <!-- Promotions Banner -->
+                <div class="promotions-banner">
+                    <h2 data-i18n="pricing.promotions.title">Special Offers</h2>
+                    <div class="promotions-grid">
+                        <div class="promo-card promo-first">
+                            <div class="promo-badge" data-i18n="pricing.promotions.first.badge">NEW CLIENT</div>
+                            <h3 data-i18n="pricing.promotions.first.title">First Time Client</h3>
+                            <p data-i18n="pricing.promotions.first.desc">Enjoy a special introductory discount on your first visit</p>
                         </div>
-                        <ul class="pricing-list">
-                            <li data-i18n="pricing.injectables.item1">Botox - Per Unit</li>
-                            <li data-i18n="pricing.injectables.item2">Dermal Fillers - Per Syringe</li>
-                            <li data-i18n="pricing.injectables.item3">Lip Enhancement</li>
-                            <li data-i18n="pricing.injectables.item4">Consultation Included</li>
-                        </ul>
-                        <a href="/contact.html" class="btn" data-i18n="pricing.cta">Book Consultation</a>
-                    </div>
-
-                    <div class="pricing-card">
-                        <h3 data-i18n="pricing.face.title">Face Treatments</h3>
-                        <div class="price">
-                            <span class="price-currency">$</span><span data-i18n="pricing.face.price">Starting at 150</span>
+                        <div class="promo-card promo-package">
+                            <div class="promo-badge" data-i18n="pricing.promotions.three.badge">5% OFF</div>
+                            <h3 data-i18n="pricing.promotions.three.title">3 Session Package</h3>
+                            <p data-i18n="pricing.promotions.three.desc">Save 5% when you purchase 3 sessions</p>
                         </div>
-                        <ul class="pricing-list">
-                            <li data-i18n="pricing.face.item1">Hydrafacial</li>
-                            <li data-i18n="pricing.face.item2">Chemical Peels</li>
-                            <li data-i18n="pricing.face.item3">Microdermabrasion</li>
-                            <li data-i18n="pricing.face.item4">Custom Facial</li>
-                        </ul>
-                        <a href="/contact.html" class="btn" data-i18n="pricing.cta">Book Consultation</a>
-                    </div>
-
-                    <div class="pricing-card">
-                        <h3 data-i18n="pricing.body.title">Body Treatments</h3>
-                        <div class="price">
-                            <span class="price-currency">$</span><span data-i18n="pricing.body.price">Starting at 200</span>
+                        <div class="promo-card promo-package">
+                            <div class="promo-badge" data-i18n="pricing.promotions.six.badge">10% OFF</div>
+                            <h3 data-i18n="pricing.promotions.six.title">6 Session Package</h3>
+                            <p data-i18n="pricing.promotions.six.desc">Save 10% when you purchase 6 sessions</p>
                         </div>
-                        <ul class="pricing-list">
-                            <li data-i18n="pricing.body.item1">Body Contouring</li>
-                            <li data-i18n="pricing.body.item2">Cellulite Reduction</li>
-                            <li data-i18n="pricing.body.item3">Skin Tightening</li>
-                            <li data-i18n="pricing.body.item4">Body Wraps</li>
-                        </ul>
-                        <a href="/contact.html" class="btn" data-i18n="pricing.cta">Book Consultation</a>
-                    </div>
-
-                    <div class="pricing-card">
-                        <h3 data-i18n="pricing.wellness.title">Wellness</h3>
-                        <div class="price">
-                            <span class="price-currency">$</span><span data-i18n="pricing.wellness.price">Starting at 175</span>
-                        </div>
-                        <ul class="pricing-list">
-                            <li data-i18n="pricing.wellness.item1">IV Therapy</li>
-                            <li data-i18n="pricing.wellness.item2">Vitamin Injections</li>
-                            <li data-i18n="pricing.wellness.item3">Wellness Consultation</li>
-                            <li data-i18n="pricing.wellness.item4">Nutritional Support</li>
-                        </ul>
-                        <a href="/contact.html" class="btn" data-i18n="pricing.cta">Book Consultation</a>
                     </div>
                 </div>
 
-                <div style="text-align: center; margin-top: 4rem; padding: 2rem; background: var(--white); border: 1px solid rgba(0,0,0,0.1);">
-                    <p data-i18n="pricing.note" style="color: var(--text-light); margin-bottom: 1rem;">All prices are subject to change. Please contact us for a personalized consultation and accurate pricing.</p>
-                    <a href="/contact.html" class="btn" data-i18n="pricing.contact">Contact Us</a>
+                <!-- Injectables Section -->
+                <div class="pricing-section">
+                    <h2 class="pricing-section-title" data-i18n="pricing.injectables.title">Injectable Treatments</h2>
+                    <div class="menu-table">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.botox.title">Botox</h3>
+                                <p data-i18n="pricing.injectables.botox.desc">Per unit</p>
+                            </div>
+                            <div class="menu-price">$12</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.dysport.title">Dysport</h3>
+                                <p data-i18n="pricing.injectables.dysport.desc">Per unit</p>
+                            </div>
+                            <div class="menu-price">$4</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.filler.title">Dermal Filler (1ml)</h3>
+                                <p data-i18n="pricing.injectables.filler.desc">Juvederm, Restylane, or similar</p>
+                            </div>
+                            <div class="menu-price">$650</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.lip.title">Lip Enhancement</h3>
+                                <p data-i18n="pricing.injectables.lip.desc">0.5ml - 1ml</p>
+                            </div>
+                            <div class="menu-price">$450 - $650</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.cheek.title">Cheek Enhancement</h3>
+                                <p data-i18n="pricing.injectables.cheek.desc">Per syringe</p>
+                            </div>
+                            <div class="menu-price">$650</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.injectables.consult.title">Consultation</h3>
+                                <p data-i18n="pricing.injectables.consult.desc">Complimentary with treatment</p>
+                            </div>
+                            <div class="menu-price">$0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Face Treatments Section -->
+                <div class="pricing-section">
+                    <h2 class="pricing-section-title" data-i18n="pricing.face.title">Face Treatments</h2>
+                    <div class="menu-table">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.hydrafacial.title">Hydrafacial</h3>
+                                <p data-i18n="pricing.face.hydrafacial.desc">Deep cleansing facial treatment</p>
+                            </div>
+                            <div class="menu-price">$195</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.chemical.title">Chemical Peel</h3>
+                                <p data-i18n="pricing.face.chemical.desc">Light to medium depth</p>
+                            </div>
+                            <div class="menu-price">$150 - $250</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.micro.title">Microdermabrasion</h3>
+                                <p data-i18n="pricing.face.micro.desc">Exfoliation and skin renewal</p>
+                            </div>
+                            <div class="menu-price">$125</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.microneedling.title">Microneedling</h3>
+                                <p data-i18n="pricing.face.microneedling.desc">Collagen induction therapy</p>
+                            </div>
+                            <div class="menu-price">$350</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.ipl.title">IPL Photofacial</h3>
+                                <p data-i18n="pricing.face.ipl.desc">Pigmentation and redness reduction</p>
+                            </div>
+                            <div class="menu-price">$300</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.laser.title">Laser Resurfacing</h3>
+                                <p data-i18n="pricing.face.laser.desc">Fractional laser treatment</p>
+                            </div>
+                            <div class="menu-price">$450</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.face.custom.title">Custom Facial</h3>
+                                <p data-i18n="pricing.face.custom.desc">Tailored to your skin needs</p>
+                            </div>
+                            <div class="menu-price">$175</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Body Treatments Section -->
+                <div class="pricing-section">
+                    <h2 class="pricing-section-title" data-i18n="pricing.body.title">Body Treatments</h2>
+                    <div class="menu-table">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.body.bodyfx.title">BodyFx</h3>
+                                <p data-i18n="pricing.body.bodyfx.desc">Fat reduction and skin tightening</p>
+                            </div>
+                            <div class="menu-price">$350</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.body.velashape.title">VelaShape III</h3>
+                                <p data-i18n="pricing.body.velashape.desc">Cellulite reduction</p>
+                            </div>
+                            <div class="menu-price">$300</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.body.potenza.title">Potenza RF Microneedling</h3>
+                                <p data-i18n="pricing.body.potenza.desc">Body skin tightening</p>
+                            </div>
+                            <div class="menu-price">$400</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.body.wrap.title">Body Wrap</h3>
+                                <p data-i18n="pricing.body.wrap.desc">Detoxifying and contouring</p>
+                            </div>
+                            <div class="menu-price">$200</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wellness Section -->
+                <div class="pricing-section">
+                    <h2 class="pricing-section-title" data-i18n="pricing.wellness.title">Wellness</h2>
+                    <div class="menu-table">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.wellness.iv.title">IV Therapy</h3>
+                                <p data-i18n="pricing.wellness.iv.desc">Vitamin infusion therapy</p>
+                            </div>
+                            <div class="menu-price">$175 - $350</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.wellness.vitamin.title">Vitamin B12 Injection</h3>
+                                <p data-i18n="pricing.wellness.vitamin.desc">Energy and metabolism boost</p>
+                            </div>
+                            <div class="menu-price">$50</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h3 data-i18n="pricing.wellness.consult.title">Wellness Consultation</h3>
+                                <p data-i18n="pricing.wellness.consult.desc">Personalized wellness assessment</p>
+                            </div>
+                            <div class="menu-price">$100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note Section -->
+                <div class="pricing-note">
+                    <p data-i18n="pricing.note">All prices are subject to change. Consultation required for personalized treatment plans. Package discounts apply to same treatment type.</p>
+                    <a href="/contact.html" class="btn" data-i18n="pricing.contact">Book Your Consultation</a>
                 </div>
             </div>
         </section>
@@ -147,4 +280,3 @@
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
-
